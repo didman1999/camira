@@ -1,0 +1,72 @@
+import type { Product } from "@/types";
+
+/**
+ * Mock product catalogue.
+ * Replace with API data later via src/services/catalog.ts — components never import this file directly.
+ */
+export const products: Product[] = [
+  {
+    id: "p-hik-4ch-kit",
+    slug: "hikvision-4ch-kit",
+    name: "مجموعة 4 كاميرات + جهاز تسجيل",
+    model: "Hikvision 4CH Kit",
+    brand: "Hikvision",
+    categoryId: "systems",
+    price: 6900,
+    image: "/images/product-kit.jpg",
+    badge: { label: "عرض خاص", tone: "sale" },
+    isBestSeller: true,
+    inStock: true,
+  },
+  {
+    id: "p-hik-8ch-nvr",
+    slug: "hikvision-8ch-nvr",
+    name: "جهاز تسجيل 8 قنوات",
+    model: "Hikvision 8CH NVR",
+    brand: "Hikvision",
+    categoryId: "recorders",
+    price: 4200,
+    image: "/images/product-nvr.jpg",
+    isBestSeller: true,
+    inStock: true,
+  },
+  {
+    id: "p-unv-2mp-dome",
+    slug: "unv-2mp-dome",
+    name: "كاميرا داخلية 2MP",
+    model: "UNV 2MP Dome",
+    brand: "UNV",
+    categoryId: "cameras",
+    price: 1850,
+    image: "/images/product-dome.jpg",
+    isBestSeller: true,
+    inStock: true,
+  },
+  {
+    id: "p-hik-4mp-bullet",
+    slug: "hikvision-4mp-bullet",
+    name: "كاميرا خارجية 4MP",
+    model: "Hikvision 4MP",
+    brand: "Hikvision",
+    categoryId: "cameras",
+    price: 2450,
+    oldPrice: 2900,
+    image: "/images/product-bullet.jpg",
+    badge: { label: "خصم 15%", tone: "success" },
+    isBestSeller: true,
+    inStock: true,
+  },
+  {
+    id: "p-dahua-2mp-ptz",
+    slug: "dahua-2mp-ptz",
+    name: "كاميرا متحركة خارجية 2MP",
+    model: "Dahua 2MP PTZ",
+    brand: "Dahua",
+    categoryId: "cameras",
+    price: 3250,
+    image: "/images/product-ptz.jpg",
+    badge: { label: "الأكثر مبيعاً", tone: "sale" },
+    isBestSeller: true,
+    inStock: true,
+  },
+];
